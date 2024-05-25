@@ -73,7 +73,7 @@ def future_Service_timeline(service_record):
     stems = np.zeros(len(dates))
     stems[::2] = 0.3
     stems[1::2] = -0.3
-    dataset = pd.DataFrame({'dates': dates, 'stems': stems})
+    dataset = pd.DataFrame({'date': dates, 'stems': stems})
     return dataset
 
 def plot_failure_correlation_data(failure_data):

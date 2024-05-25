@@ -64,22 +64,6 @@
           "Analyse All Review's from .csv files."
         ],
         "summary": "Analyse All Review's from .csv files.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "base64"
-                  }
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK",
@@ -102,22 +86,6 @@
           "Analyse All Review's from .csv files."
         ],
         "summary": "Analyse All Review's from .csv files.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "base64"
-                  }
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK",
@@ -140,22 +108,6 @@
           "Analyse All Review's from .csv files."
         ],
         "summary": "Analyse All Review's from .csv files.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "base64"
-                  }
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK",
@@ -173,6 +125,28 @@
       }
     },
     "/getFSTimeline": {
+      "post": {
+        "tags": [
+          "Analyse All Review's from .csv files."
+        ],
+        "summary": "Analyse All Review's from .csv files.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/ValidateResponse"
+            }
+          },
+          "404": {
+            "description": "NOT FOUND",
+            "schema": {
+              "$ref": "#/components/schemas/ValidateResponse"
+            }
+          }
+        }
+      }
+    },
+    "/upload": {
       "post": {
         "tags": [
           "Analyse All Review's from .csv files."

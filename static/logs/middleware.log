@@ -5077,3 +5077,154 @@
 2024-05-25 07:38:37,936 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [25/May/2024 07:38:37] "POST /getFPAccuracy HTTP/1.1" 200 -
 2024-05-25 07:38:55,852 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [25/May/2024 07:38:55] "POST /getPlotFailure HTTP/1.1" 200 -
 2024-05-25 07:39:13,199 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [25/May/2024 07:39:13] "POST /getFSTimeline HTTP/1.1" 200 -
+2024-05-25 11:51:50,603 INFO root MainThread : Started
+2024-05-25 11:51:50,646 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:51:50,646 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:51:50,650 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:51:52,948 INFO root MainThread : Started
+2024-05-25 11:51:52,959 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:51:52,963 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:51:55,319 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:51:55] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-05-25 11:52:25,201 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:52:25,664 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:52:28,006 INFO root MainThread : Started
+2024-05-25 11:52:28,017 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:52:28,021 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:52:35,630 INFO root MainThread : Started
+2024-05-25 11:52:35,651 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:52:35,652 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:52:35,654 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:52:37,683 INFO root MainThread : Started
+2024-05-25 11:52:37,695 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:52:37,699 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:52:58,837 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:52:58] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-05-25 11:54:19,432 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:54:19,771 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:54:25,067 INFO root MainThread : Started
+2024-05-25 11:54:25,086 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:54:25,086 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:54:25,088 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:54:27,221 INFO root MainThread : Started
+2024-05-25 11:54:27,237 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:54:27,241 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:54:40,218 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:54:40] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-05-25 11:55:25,649 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:55:26,122 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:55:28,424 INFO root MainThread : Started
+2024-05-25 11:55:28,440 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:55:28,444 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:55:35,501 INFO root MainThread : Started
+2024-05-25 11:55:35,520 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:55:35,522 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:55:35,523 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:55:37,499 INFO root MainThread : Started
+2024-05-25 11:55:37,511 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:55:37,514 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:55:42,097 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:55:42] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-05-25 11:56:19,086 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:56:19] "POST /upload HTTP/1.1" 200 -
+2024-05-25 11:56:31,184 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:56:31] "[31m[1mPOST /getFSTimeline HTTP/1.1[0m" 400 -
+2024-05-25 11:56:41,249 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:56:41,642 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:56:43,997 INFO root MainThread : Started
+2024-05-25 11:56:44,008 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:56:44,012 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:56:49,322 INFO root MainThread : Started
+2024-05-25 11:56:49,353 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:56:49,353 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:56:49,355 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:56:51,561 INFO root MainThread : Started
+2024-05-25 11:56:51,574 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:56:51,577 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:56:53,887 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:56:53] "[31m[1mPOST /getFSTimeline HTTP/1.1[0m" 400 -
+2024-05-25 11:57:00,132 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:57:00] "POST /upload HTTP/1.1" 200 -
+2024-05-25 11:57:07,170 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:57:07] "POST /getFSTimeline HTTP/1.1" 200 -
+2024-05-25 11:57:59,558 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:57:59,950 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:59:14,521 INFO root MainThread : Started
+2024-05-25 11:59:14,556 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 11:59:14,557 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 11:59:14,559 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 11:59:16,556 INFO root MainThread : Started
+2024-05-25 11:59:16,571 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 11:59:16,576 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 11:59:21,573 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:59:21] "POST /upload HTTP/1.1" 200 -
+2024-05-25 11:59:24,369 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:59:24] "POST /getFSTimeline HTTP/1.1" 200 -
+2024-05-25 11:59:28,146 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 11:59:28] "POST /getPlotFailure HTTP/1.1" 200 -
+2024-05-25 11:59:59,088 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 11:59:59,516 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:00:28,586 INFO root MainThread : Started
+2024-05-25 12:00:28,609 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 12:00:28,609 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 12:00:28,611 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:00:30,663 INFO root MainThread : Started
+2024-05-25 12:00:30,676 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 12:00:30,681 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 12:00:34,154 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:00:34] "POST /upload HTTP/1.1" 200 -
+2024-05-25 12:00:37,730 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:00:37] "POST /getFPAccuracy HTTP/1.1" 200 -
+2024-05-25 12:00:43,453 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:00:43] "POST /getFPAccuracy HTTP/1.1" 200 -
+2024-05-25 12:00:57,314 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 12:00:57,739 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:01:23,767 INFO root MainThread : Started
+2024-05-25 12:01:23,794 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 12:01:23,794 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 12:01:23,796 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:01:26,007 INFO root MainThread : Started
+2024-05-25 12:01:26,019 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 12:01:26,023 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 12:01:29,152 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:01:29] "POST /upload HTTP/1.1" 200 -
+2024-05-25 12:01:34,545 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:01:34] "[31m[1mPOST /getPcaGraph HTTP/1.1[0m" 400 -
+2024-05-25 12:02:26,733 INFO werkzeug MainThread :  * Detected change in 'D:\\Projects\\Freelance\\plainpythontoflask\\py-PredictiveMaintenance\\app.py', reloading
+2024-05-25 12:02:27,100 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:02:57,874 INFO root MainThread : Started
+2024-05-25 12:02:57,906 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 12:02:57,906 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 12:02:57,908 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:03:00,050 INFO root MainThread : Started
+2024-05-25 12:03:00,061 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 12:03:00,067 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 12:03:04,258 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:03:04] "POST /upload HTTP/1.1" 200 -
+2024-05-25 12:03:07,288 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:03:07] "POST /getPcaGraph HTTP/1.1" 200 -
+2024-05-25 12:04:04,321 INFO root MainThread : Started
+2024-05-25 12:04:04,348 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 12:04:04,348 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 12:04:04,350 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:04:06,611 INFO root MainThread : Started
+2024-05-25 12:04:06,622 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 12:04:06,626 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 12:04:06,645 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:06] "GET /swagger/ HTTP/1.1" 200 -
+2024-05-25 12:04:06,769 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:06] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-05-25 12:04:06,771 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:06] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-05-25 12:04:07,004 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:07] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-05-25 12:04:07,005 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:07] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-05-25 12:04:07,493 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:07] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-05-25 12:04:07,741 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:07] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-05-25 12:04:51,809 INFO root MainThread : Started
+2024-05-25 12:04:51,837 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-05-25 12:04:51,837 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-05-25 12:04:51,839 INFO werkzeug MainThread :  * Restarting with stat
+2024-05-25 12:04:53,865 INFO root MainThread : Started
+2024-05-25 12:04:53,877 WARNING werkzeug MainThread :  * Debugger is active!
+2024-05-25 12:04:53,881 INFO werkzeug MainThread :  * Debugger PIN: 126-023-841
+2024-05-25 12:04:53,901 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:53] "GET /swagger/ HTTP/1.1" 200 -
+2024-05-25 12:04:54,017 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/swagger-ui.css HTTP/1.1[0m" 304 -
+2024-05-25 12:04:54,018 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/index.css HTTP/1.1[0m" 304 -
+2024-05-25 12:04:54,245 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2024-05-25 12:04:54,246 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2024-05-25 12:04:54,634 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-05-25 12:04:54,882 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "GET /static/swagger.json HTTP/1.1" 200 -
+2024-05-25 12:04:54,974 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:04:54] "[36mGET /swagger/favicon-32x32.png HTTP/1.1[0m" 304 -
+2024-05-25 12:05:07,501 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:07] "POST /upload HTTP/1.1" 200 -
+2024-05-25 12:05:15,075 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:15] "POST /getFSTimeline HTTP/1.1" 200 -
+2024-05-25 12:05:22,453 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:22] "POST /getPcaGraph HTTP/1.1" 200 -
+2024-05-25 12:05:27,994 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:27] "POST /getPlotFailure HTTP/1.1" 200 -

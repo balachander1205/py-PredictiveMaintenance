@@ -1,5 +1,5 @@
 import logging
-from flask import Flask,render_template, request,json,Response, jsonify
+from flask import Flask,render_template, request,json,Response
 
 from commons import future_Service_timeline, get_pca_graph, get_failure_prediction_accuracy, plot_failure_correlation_data
 from flask_cors import CORS, cross_origin
@@ -60,10 +60,17 @@ def validateImage():
 @cross_origin()
 def get_pca_graph_data():
     try:
-        global sensor_data
-        if 'sensor_data' not in globals():
-            return jsonify({"message": "No CSV file uploaded"}), 400
-
+        # Read the File using Flask request
+        file = request.files['file']
+        filename = secure_filename(file.filename)
+        dirs = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(dirs)
+        rul = pd.read_excel(dirs,sheet_name='RUL')
+        failure_data = pd.read_excel(dirs,sheet_name='Failure')
+        service_record = pd.read_excel(dirs,sheet_name='Service Record')
+        sensor_data = rul.sample(n=1000)
+        del sensor_data['Asset']
+        # print(sensor_data)
         pc1, pc2 = get_pca_graph(sensor_data)
         data = {
           "green": pc1.tolist(),
@@ -79,10 +86,16 @@ def get_pca_graph_data():
 @cross_origin()
 def failure_prediction_accuracy_data():
     try:
-        global failure_data
-        if 'failure_data' not in globals():
-            return jsonify({"message": "No CSV file uploaded"}), 400
-
+        # Read the File using Flask request
+        file = request.files['file']
+        filename = secure_filename(file.filename)
+        dirs = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(dirs)
+        rul = pd.read_excel(dirs,sheet_name='RUL')
+        failure_data = pd.read_excel(dirs,sheet_name='Failure')
+        service_record = pd.read_excel(dirs,sheet_name='Service Record')
+        sensor_data = rul.sample(n=1000)
+        del sensor_data['Asset']
         # print(sensor_data)
         accuracy = get_failure_prediction_accuracy(failure_data)
         data = {
@@ -97,10 +110,16 @@ def failure_prediction_accuracy_data():
 @cross_origin()
 def get_plot_failure_correlation():
     try:
-        global failure_data
-        if 'failure_data' not in globals():
-            return jsonify({"message": "No CSV file uploaded"}), 400
-
+        # Read the File using Flask request
+        file = request.files['file']
+        filename = secure_filename(file.filename)
+        dirs = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(dirs)
+        rul = pd.read_excel(dirs,sheet_name='RUL')
+        failure_data = pd.read_excel(dirs,sheet_name='Failure')
+        service_record = pd.read_excel(dirs,sheet_name='Service Record')
+        sensor_data = rul.sample(n=1000)
+        del sensor_data['Asset']
         failure_data1 = json.loads(failure_data.to_json(orient="records"))
         return Response(json.dumps(failure_data1),mimetype='application/json')
     except Exception as e:
@@ -112,45 +131,43 @@ def get_plot_failure_correlation():
 @cross_origin()
 def get_future_Service_timeline():
     try:
-        global service_record
-        if 'service_record' not in globals():
-            return jsonify({"message": "No CSV file uploaded"}), 400
-
-        service_record_df = service_record
-        dataset = future_Service_timeline(service_record_df)
+        # Read the File using Flask request
+        file = request.files['file']
+        filename = secure_filename(file.filename)
+        dirs = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(dirs)
+        service_record = pd.read_excel(dirs,sheet_name='Service Record')
+        dataset = future_Service_timeline(service_record)
         dataframe = json.loads(dataset.to_json(orient="records"))
         return Response(json.dumps(dataframe),mimetype='application/json')
     except Exception as e:
         print(e)
         logging.debug("Xception:get_future_Service_timeline="+e)
 
-@app.route('/upload', methods=['GET','POST'])
+@app.route('/upload', methods=['POST'])
 @cross_origin()
 def upload_csv():
-    file = request.files['file']
     if 'file' not in request.files:
         return jsonify({"message": "No file part"}), 400
     
+    file = request.files['file']
     if file.filename == '':
         return jsonify({"message": "No selected file"}), 400
 
     if file:
         try:
             # Read the File using Flask request
-            # file = request.files['file']
+            file = request.files['file']
             filename = secure_filename(file.filename)
             dirs = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(dirs)
             global rul
             global failure_data
             global service_record
-            global sensor_data
             
             rul = pd.read_excel(dirs,sheet_name='RUL')
             failure_data = pd.read_excel(dirs,sheet_name='Failure')
             service_record = pd.read_excel(dirs,sheet_name='Service Record')
-            sensor_data = rul.sample(n=1000)
-            del sensor_data['Asset']
             
             return jsonify({"message": "File uploaded successfully"})
         except Exception as e:
