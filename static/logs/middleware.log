@@ -5228,3 +5228,4 @@
 2024-05-25 12:05:15,075 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:15] "POST /getFSTimeline HTTP/1.1" 200 -
 2024-05-25 12:05:22,453 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:22] "POST /getPcaGraph HTTP/1.1" 200 -
 2024-05-25 12:05:27,994 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:27] "POST /getPlotFailure HTTP/1.1" 200 -
+2024-05-25 12:05:38,875 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [25/May/2024 12:05:38] "POST /getFPAccuracy HTTP/1.1" 200 -
