@@ -11,7 +11,7 @@ from logging.config import dictConfig
 from logging.handlers import RotatingFileHandler
 import os
 import pandas as pd
-
+from werkzeug.serving import run_simple
 
 app = Flask(__name__)
 CORS(app)
@@ -64,10 +64,11 @@ def get_pca_graph_data():
         if 'sensor_data' not in globals():
             return jsonify({"message": "No CSV file uploaded"}), 400
 
-        pc1, pc2 = get_pca_graph(sensor_data)
+        pc1, pc2, base64_str = get_pca_graph(sensor_data)
         data = {
           "green": pc1.tolist(),
-          "red": pc2.tolist()
+          "red": pc2.tolist(),
+          "image": base64_str
         }
         return Response(json.dumps(data),mimetype='application/json')
     except Exception as e:
@@ -83,10 +84,10 @@ def failure_prediction_accuracy_data():
         if 'failure_data' not in globals():
             return jsonify({"message": "No CSV file uploaded"}), 400
 
-        # print(sensor_data)
-        accuracy = get_failure_prediction_accuracy(failure_data)
+        accuracy, base64_str = get_failure_prediction_accuracy(failure_data)
         data = {
-          "accuracy": accuracy
+          "accuracy": accuracy,
+          "image": base64_str
         }
         return Response(json.dumps(data),mimetype='application/json')
     except Exception as e:
@@ -100,9 +101,13 @@ def get_plot_failure_correlation():
         global failure_data
         if 'failure_data' not in globals():
             return jsonify({"message": "No CSV file uploaded"}), 400
-
-        failure_data1 = json.loads(failure_data.to_json(orient="records"))
-        return Response(json.dumps(failure_data1),mimetype='application/json')
+        data_frame, base64_str = plot_failure_correlation_data(failure_data)
+        failure_data1 = json.loads(data_frame.to_json(orient="records"))
+        data = {
+            "dataset": failure_data1,
+            "image": base64_str
+        }
+        return Response(json.dumps(data),mimetype='application/json')
     except Exception as e:
         print(e)
         logging.debug("Xception:get_plot_failure_correlation="+e)
@@ -117,9 +122,13 @@ def get_future_Service_timeline():
             return jsonify({"message": "No CSV file uploaded"}), 400
 
         service_record_df = service_record
-        dataset = future_Service_timeline(service_record_df)
+        dataset, base64_str = future_Service_timeline(service_record_df)
         dataframe = json.loads(dataset.to_json(orient="records"))
-        return Response(json.dumps(dataframe),mimetype='application/json')
+        data = {
+            "dataset": dataframe,
+            "image":base64_str
+        }
+        return Response(json.dumps(data),mimetype='application/json')
     except Exception as e:
         print(e)
         logging.debug("Xception:get_future_Service_timeline="+e)
@@ -159,4 +168,5 @@ def upload_csv():
 if __name__=="__main__":
     logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)    
     logging.info('Started')
-    app.run(host='127.0.0.1', port=5001,debug=True, threaded=True)
+    # app.run(host='127.0.0.1', port=5001,debug=True, threaded=True)
+    run_simple('127.0.0.1', 5001, app)
